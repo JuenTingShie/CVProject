@@ -79,7 +79,8 @@
         //         animate();
         //     });
 
-        loader.load('\\models\\04\\out.glb',function(gltf){
+        // loader.load('\\models\\04\\out.glb',function(gltf){
+		loader.load('/models/04/out.glb',function(gltf){
             console.log(gltf)
             let car = gltf.scene.children[0]
             car.scale.set(2000,2000,2000);

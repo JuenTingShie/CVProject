@@ -80,7 +80,7 @@
         //     });
 
         // loader.load('\\models\\04\\out.glb',function(gltf){
-		loader.load('/models/04/out.glb',function(gltf){
+		loader.load('./models/04/out.glb',function(gltf){
             console.log(gltf)
             let car = gltf.scene.children[0]
             car.scale.set(2000,2000,2000);
@@ -97,12 +97,12 @@
         counter_S = 0;
 
         materialArray = [];
-        let texture_ft = new THREE.TextureLoader().load( '\\skyboxes\\penguins (2)\\arid2_ft.jpg');
-        let texture_bk = new THREE.TextureLoader().load( '\\skyboxes\\penguins (2)\\arid2_bk.jpg');
-        let texture_up = new THREE.TextureLoader().load( '\\skyboxes\\penguins (2)\\arid2_up.jpg');
-        let texture_dn = new THREE.TextureLoader().load( '\\skyboxes\\penguins (2)\\arid2_dn.jpg');
-        let texture_rt = new THREE.TextureLoader().load( '\\skyboxes\\penguins (2)\\arid2_rt.jpg');
-        let texture_lf = new THREE.TextureLoader().load( '\\skyboxes\\penguins (2)\\arid2_lf.jpg');
+        let texture_ft = new THREE.TextureLoader().load( './skyboxes/penguins (2)/arid2_ft.jpg');
+        let texture_bk = new THREE.TextureLoader().load( './skyboxes/penguins (2)/arid2_bk.jpg');
+        let texture_up = new THREE.TextureLoader().load( './skyboxes/penguins (2)/arid2_up.jpg');
+        let texture_dn = new THREE.TextureLoader().load( './skyboxes/penguins (2)/arid2_dn.jpg');
+        let texture_rt = new THREE.TextureLoader().load( './skyboxes/penguins (2)/arid2_rt.jpg');
+        let texture_lf = new THREE.TextureLoader().load( './skyboxes/penguins (2)/arid2_lf.jpg');
           
         materialArray.push(new THREE.MeshBasicMaterial( { map: texture_ft }));
         materialArray.push(new THREE.MeshBasicMaterial( { map: texture_bk }));
@@ -115,12 +115,12 @@
            materialArray[i].side = THREE.BackSide;
 
         materialArray2 = [];
-        texture_ft = new THREE.TextureLoader().load( '\\skyboxes\\penguins\\arid_ft.jpg');
-        texture_bk = new THREE.TextureLoader().load( '\\skyboxes\\penguins\\arid_bk.jpg');
-        texture_up = new THREE.TextureLoader().load( '\\skyboxes\\penguins\\arid_up.jpg');
-        texture_dn = new THREE.TextureLoader().load( '\\skyboxes\\penguins\\arid_dn.jpg');
-        texture_rt = new THREE.TextureLoader().load( '\\skyboxes\\penguins\\arid_rt.jpg');
-        texture_lf = new THREE.TextureLoader().load( '\\skyboxes\\penguins\\arid_lf.jpg');
+        texture_ft = new THREE.TextureLoader().load( './skyboxes/penguins/arid_ft.jpg');
+        texture_bk = new THREE.TextureLoader().load( './skyboxes/penguins/arid_bk.jpg');
+        texture_up = new THREE.TextureLoader().load( './skyboxes/penguins/arid_up.jpg');
+        texture_dn = new THREE.TextureLoader().load( './skyboxes/penguins/arid_dn.jpg');
+        texture_rt = new THREE.TextureLoader().load( './skyboxes/penguins/arid_rt.jpg');
+        texture_lf = new THREE.TextureLoader().load( './skyboxes/penguins/arid_lf.jpg');
           
         materialArray2.push(new THREE.MeshBasicMaterial( { map: texture_ft }));
         materialArray2.push(new THREE.MeshBasicMaterial( { map: texture_bk }));
@@ -133,12 +133,12 @@
            materialArray2[i].side = THREE.BackSide;
 
         materialArray3 = [];
-        texture_ft = new THREE.TextureLoader().load('\\skyboxes\\penguins (3)\\barren_ft.jpg');
-        texture_bk = new THREE.TextureLoader().load('\\skyboxes\\penguins (3)\\barren_bk.jpg');
-        texture_up = new THREE.TextureLoader().load('\\skyboxes\\penguins (3)\\barren_up.jpg');
-        texture_dn = new THREE.TextureLoader().load('\\skyboxes\\penguins (3)\\barren_dn.jpg');
-        texture_rt = new THREE.TextureLoader().load('\\skyboxes\\penguins (3)\\barren_rt.jpg');
-        texture_lf = new THREE.TextureLoader().load('\\skyboxes\\penguins (3)\\barren_lf.jpg');
+        texture_ft = new THREE.TextureLoader().load('./skyboxes/penguins (3)/barren_ft.jpg');
+        texture_bk = new THREE.TextureLoader().load('./skyboxes/penguins (3)/barren_bk.jpg');
+        texture_up = new THREE.TextureLoader().load('./skyboxes/penguins (3)/barren_up.jpg');
+        texture_dn = new THREE.TextureLoader().load('./skyboxes/penguins (3)/barren_dn.jpg');
+        texture_rt = new THREE.TextureLoader().load('./skyboxes/penguins (3)/barren_rt.jpg');
+        texture_lf = new THREE.TextureLoader().load('./skyboxes/penguins (3)/barren_lf.jpg');
           
         materialArray3.push(new THREE.MeshBasicMaterial( { map: texture_ft }));
         materialArray3.push(new THREE.MeshBasicMaterial( { map: texture_bk }));
